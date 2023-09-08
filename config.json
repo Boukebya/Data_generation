@@ -1,0 +1,64 @@
+{
+"paths" : 
+{
+	"generated" : "generated_images/",
+	"sd" : "generated_images/stablediffusion_images/",
+	"cn" : "generated_images/controlnet_images/",
+	"cn_img" : "generated_images/controlnet_images/img_original/",
+	"bp" : "images_blueprint_controlnet/",
+	"stat" : "statistics/",
+	"yolo_sd" : "statistics/yolo_sd.txt",
+	"yolo_cn" : "statistics/yolo_cn.txt",
+	"yolo_cn_lines" : "statistics/yolo_cn_lines.txt",
+	"generation_prompt_sd" : "statistics/prompt_stable.txt",
+	"generation_prompt_cn" : "statistics/prompt_cn.txt",
+	"augmented" : "generated_images/",
+	"comparison" : "statistics/kept.txt",
+	"image_kept" : "generated_images/kept_images/",
+	"training_images" : "training_images/"
+},
+"weights":
+{
+"hyper-networks":
+	{
+	"cowc":"<hypernet:aerial_style:1>",
+	"stable": "<hypernet:stable_style:1>"
+	},
+"embeddings":
+	{
+	"cowc":"*aerial",
+	"stable": "*stable"
+	}
+},
+"lora" :
+	{
+		"udacity" :  "<lora:uda_v2:1>"
+	},
+"models":
+{
+"realistic" : "realisticVisionV30_VAE",
+"ema" : "v1-5-pruned-emaonly"
+},
+"models_cn":
+	{
+		"canny" : "control_v11p_sd15_canny [d14c016b]",
+		"ip2p" : "control_v11e_sd15_ip2p [c4bb465c]",
+		"shuffle" : "control_v11e_sd15_shuffle [526bfdae]",
+		"tile" : "control_v11f1e_sd15_tile [a371b31b]",
+		"depth" : "control_v11f1e_sd15_tile [a371b31b]",
+		"lineart" : "control_v11p_sd15_lineart [43d4be0d]",
+		"mlsd" : "control_v11p_sd15_mlsd [aca30ff0]"
+	}
+,
+"VAE": 
+{
+"paragon": "paragonV10_v10VAE"
+},
+"negative_prompt": "bad proportion, no umbrella, distortion, bad quality, lowres, cropped,worst quality, bad focus, blurry, ad compression, bad artifact, bad pixel, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, no cars, no people, illustration, painting, drawing, art, sketch, cartoon, anime, deformation, distorsion",
+"steps" : "20",
+	"yolo_weight":
+	{
+		"udacity" : "yolov7.pt",
+		"cowc" : "COWC.pt"
+	}
+}

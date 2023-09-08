@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CLIP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kohya_ss" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lora" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/stable-diffusion-webui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/stable-diffusion-webui/extensions/sd-webui-controlnet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/stable-diffusion-webui/repositories/BLIP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/stable-diffusion-webui/repositories/CodeFormer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/stable-diffusion-webui/repositories/k-diffusion" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/stable-diffusion-webui/repositories/stable-diffusion-stability-ai" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yolo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yolo/yolov7" vcs="Git" />
+  </component>
+</project>
